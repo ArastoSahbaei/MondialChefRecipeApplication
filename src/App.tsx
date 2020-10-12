@@ -1,11 +1,12 @@
 import React from 'react';
-import { Test } from './components/Test'
+import Routing from './routes/Routing'
+import { NavigationBar } from './components/navigationbar/NavigationBar'
 
 function App() {
   return (
-    <>
-      <Test />
-    </>
+    <Routing>
+      <NavigationBar />
+    </Routing>
   );
 }
 
