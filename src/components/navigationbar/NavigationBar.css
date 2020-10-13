@@ -1,0 +1,6 @@
+.navigationBarContainer {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    background-color: orange;
+    padding: 0.6%;
+}

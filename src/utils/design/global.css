@@ -1,5 +1,5 @@
-body {}
-
-h1 {}
-
-p {}
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
