@@ -7,9 +7,9 @@ export const NavigationBar = () => {
 
     return (
         <div className="navigationBarContainer">
-            <span onClick={() => history.push("/")}>Mondial Chef</span> <br />
+            <span className="navigationBarLogotype" onClick={() => history.push("/")}>Mondial Chef</span> <br />
             <input></input>
-            <span onClick={() => history.push("/signin")}>Sign In</span>
+            <span className="signin" onClick={() => history.push("/signin")}>Sign In</span>
         </div>
     )
 }

@@ -4,3 +4,12 @@
     background-color: orange;
     padding: 0.6%;
 }
+
+.signin {
+    grid-column: 10/10;
+    cursor: pointer;
+}
+
+.navigationBarLogotype {
+    cursor: pointer;
+}
