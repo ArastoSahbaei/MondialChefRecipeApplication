@@ -1,22 +1,15 @@
-import React, { useEffect, useState } from 'react'
+import React, { useContext } from 'react'
 import './HomeView.css'
+import { UserContext } from '../../utils/context/UserContext'
 
 export const HomeView = () => {
 
-    const [random, setRandom] = useState<any>("WonderWoman")
-
-    useEffect(() => {
-        const userName = localStorage.getItem("email")
-        if (true) {
-            alert("userName")
-        }
-    }, [random])
+    const [loggedInUser, setLoggedinUser] = useContext(UserContext)
 
     return (
         <div className="homeContainer">
-            <button onClick={() => setRandom("Hulk")}>Update the value of random state</button>
+            <h1>Currently logged in user: {loggedInUser}</h1>
             <h1>This is the HomeView</h1>
-            <h1>{random}</h1>
         </div>
     )
 }

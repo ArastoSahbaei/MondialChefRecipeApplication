@@ -1,12 +1,15 @@
-import React, { useState } from 'react'
+import React, { useState, useContext } from 'react'
 import { useHistory } from 'react-router-dom'
+import { UserContext } from '../../utils/context/UserContext'
 
 export const SignInView = () => {
     const history = useHistory();
     const [loginEmail, setLoginEmail] = useState<any>()
     const [loginPassword, setLoginPassword] = useState<any>()
+    const [loggedInUser, setLoggedinUser] = useContext(UserContext)
 
     const login = () => {
+        setLoggedinUser(loginEmail)
         localStorage.setItem('email', loginEmail)
         alert(loginEmail + " Has logged in")
         history.push('/home')
